@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>631</width>
+    <height>626</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>586</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>View Port 1</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="3" column="1">
+       <widget class="QComboBox" name="Preparetion_Box">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <item>
+         <property name="text">
+          <string>Preparetion</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>T1 Prep (IR)</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>T2  Prep</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Tagging Prep</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QLabel" name="label_2">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="text">
+         <string>Acquasition</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3" colspan="2">
+       <widget class="PlotWidget" name="GV_prep"/>
+      </item>
+      <item row="1" column="3" colspan="2">
+       <widget class="QLabel" name="label">
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Sunken</enum>
+        </property>
+        <property name="lineWidth">
+         <number>3</number>
+        </property>
+        <property name="text">
+         <string>Preparation</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="3">
+       <widget class="PlotWidget" name="GV_aqua"/>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="Ernst_Angle">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="text">
+         <string>Ernst Angle</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="3">
+       <widget class="QComboBox" name="comboBox">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <item>
+         <property name="text">
+          <string>Artifacts</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Alaising</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Bluring</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="3" column="4">
+       <widget class="QComboBox" name="Zooming_Box">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentText">
+         <string>Zooming</string>
+        </property>
+        <item>
+         <property name="text">
+          <string>Zooming</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Without Link</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>With Link</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="Start_seq1">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Start</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGraphicsView" name="graphicsView_seq1"/>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="2">
+       <widget class="QComboBox" name="Acquisition_Box">
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <item>
+         <property name="text">
+          <string>Acquisition</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>GRE</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SSFP</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>SE</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>Phantom</string>
+     </attribute>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" colspan="2">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QGraphicsView" name="graphicsView_phantom"/>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="2">
+       <widget class="QLabel" name="image">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>200</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3">
+       <widget class="QSlider" name="Brightness_slider">
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="Decay_label">
+        <property name="text">
+         <string>Decay</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2">
+       <widget class="QLabel" name="Recovery_label">
+        <property name="text">
+         <string> Recovey</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="PlotWidget" name="graph_t2"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="PlotWidget" name="graph_t1"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QSlider" name="Contrast_slider">
+        <property name="minimum">
+         <number>-10</number>
+        </property>
+        <property name="maximum">
+         <number>10</number>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" rowspan="2">
+       <widget class="QSplitter" name="splitter">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <widget class="QSplitter" name="splitter_2">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <widget class="QComboBox" name="size_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentText">
+           <string>Size</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="duplicatesEnabled">
+           <bool>false</bool>
+          </property>
+          <item>
+           <property name="text">
+            <string>Size</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>64</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>128</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>256</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>512</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QPushButton" name="browse">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="text">
+           <string>Broswe</string>
+          </property>
+         </widget>
+         <widget class="QComboBox" name="property_2">
+          <property name="styleSheet">
+           <string notr="true"/>
+          </property>
+          <property name="editable">
+           <bool>true</bool>
+          </property>
+          <property name="currentText">
+           <string>Property</string>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>40</width>
+            <height>40</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string>Property</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>T1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>T2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Phantom</string>
+           </property>
+          </item>
+         </widget>
+         <widget class="QLineEdit" name="TE_Edit">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Enter TE</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="TR_Edit">
+          <property name="text">
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Enter TR</string>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="FA_Edit_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Enter FA</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="ST_Edit_5">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string>Enter ST</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

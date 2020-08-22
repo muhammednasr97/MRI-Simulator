@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>850</width>
+    <height>630</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="comboBox_sp">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>540</y>
+     <width>101</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>O.Array</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>T1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>T2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>PD</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_TR">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>540</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_FA">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>540</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_time">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>500</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QSpinBox" name="spinBox_TE">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>540</y>
+     <width>42</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="phantom2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>320</y>
+     <width>320</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>phantom</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>500</y>
+     <width>101</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Browse</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="phantom1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>320</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>phantom</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="PlotWidget" name="graphicsView_t1_2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>31</y>
+     <width>461</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="PlotWidget" name="graphicsView_t2">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>260</y>
+     <width>461</width>
+     <height>211</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PlotWidget</class>
+   <extends>QGraphicsView</extends>
+   <header>pyqtgraph</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
